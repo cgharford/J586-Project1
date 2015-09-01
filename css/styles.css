@@ -178,7 +178,7 @@ input[type=checkbox]:checked {
 
 /* Contins main content for webpage */
 #main-content {
-  background: -webkit-linear-gradient(#E3E3E3, white, white);
+  background: -webkit-linear-gradient(#E3E3E3, white, white, white);
   border-radius: .5em;
   margin-top: 1em;
   text-align: center;
