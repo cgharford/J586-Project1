@@ -5,15 +5,6 @@
 
 }
 
-
-body {
-  border:none;
-}
-
-span img {
-  border:none;
-}
-
 a {
   color: #1996E8;
   text-decoration: none;
@@ -76,14 +67,6 @@ input[type=checkbox]:checked {
    overflow: visible;
 }
 
-.header-help-icon{
-  background: url(sprites.png) no-repeat;
-	background-position: -363px -218px ;
-	width: 20px;
-	height: 20px;
-  border: none;
-}
-
 /* Header bar at the top of the page */
 #header {
   background: -webkit-linear-gradient(#2498F4, #1996E8);
@@ -109,14 +92,6 @@ input[type=checkbox]:checked {
 #menu {
   background-color: #134670;
   background-image: url("../img/menu-texture.png");
-  /*background-image: url("../img/left-gradient.png");
-  background-image: url("../img/right-gradient.png");*/
-
-  /*background:
-    url("../img/menu-texture.png") 5000px 10px repeat,
-    url("../img/left-gradient.png") 800px 10px no-repeat,
-    url("../img/right-gradient.png") 800px 10px no-repeat;*/
-
   padding: 2em 2em 2em 2em;
   text-align: center;
 }
@@ -139,6 +114,12 @@ input[type=checkbox]:checked {
   visibility: hidden;
 }
 
+#active {
+  background-image: url("../img/active-page-marker.png");
+  position: relative;
+  background-position: 0px 100px;
+  background-size: 50%;
+}
 
 
 /* Dashboard label with search bar */
@@ -362,41 +343,66 @@ input[type=checkbox]:checked {
   text-align: center;
 }
 
+.profile-boxes {
+  width: 212px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .banner {
   background-color: #1996E8;
   color: white;
-  width: 100px;
+  padding: .5em;
   text-align: center;
+  width: 212px;
 }
 
+.label-font {
+  font-size: 1.5em;
+}
+
+.influeneces-font {
+  font-size: .75em;
+}
+
+.banner-flag-left {
+    position: absolute;
+    top: 80px;
+    left: -15px;
+}
+.banner-flag-right{
+    position: absolute;
+    top: 80px;
+    right: -15px;
+}
+
+
 #did-you-know-box {
+  background-image:
+     radial-gradient(circle at 50% 0px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 13px, red 14px),
+     radial-gradient(circle at 0 24px, white 0, white 22px, #1996E8 14px),
+     radial-gradient(circle at 44px 24px, white 0, white 22px, #1996E8 14px),
+     radial-gradient(circle at 44px 20px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 13px, red 14px);
+  background-size: 0px 0px, 80px 48px, 44px 48px, 0px 0px;
+  background-position: 0px 0px, 0px 50%, 100% 50%, 0px 0px;
+  background-repeat: no-repeat;
   background-color: #1996E8;
   border-radius: .25em;
   padding: 3em 4em 3em 4em;
-  background-image:
-       radial-gradient(circle at 50% 0px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 13px, red 14px),
-       radial-gradient(circle at 0 24px, white 0, white 22px, #1996E8 14px),
-       radial-gradient(circle at 44px 24px, white 0, white 22px, #1996E8 14px),
-       radial-gradient(circle at 44px 20px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 13px, red 14px);
-   background-size: 0px 0px, 80px 48px, 44px 48px, 0px 0px;
-   background-position: 0px 0px, 0px 50%, 100% 50%, 0px 0px;
-   background-repeat: no-repeat;
-}
-
-#did-you-know {
   color: white;
 }
 
 #arrow-left {
   position: absolute;
-  top: 19px;
-  left: -55px;
+  top: 44%;
+  left: 0px;
 }
 
 #arrow-right {
   position: absolute;
-  top: 19px;
-  right: -55px;
+  top: 44%;
+  right: 0px;
 }
 
  #ads {
