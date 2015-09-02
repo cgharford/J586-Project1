@@ -1,9 +1,23 @@
-@media (min-width: @screen-lg-min) {
-  #dashboard-label {
-    font-size: 6em;
-  }
 
+
+/*@media all and (min-width: 1140px) {
+  body {
+      background-color: lightblue;
+  }
 }
+
+@media all and (max-width: 1139px) and (min-width: 800px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+@media all and (max-width: 799px) {
+  body {
+      background-color: lightblue;
+  }
+}*/
+
 
 a {
   color: #1996E8;
@@ -115,10 +129,11 @@ input[type=checkbox]:checked {
 }
 
 #active {
-  background-image: url("../img/active-page-marker.png");
+  background: url("../img/active-page-marker.png") center center no-repeat;
   position: relative;
-  background-position: 0px 100px;
+  background-position: 46% 50%;
   background-size: 50%;
+  border: 1px solid red;
 }
 
 
@@ -482,3 +497,18 @@ a.grey-links:hover  {
 a.grey-links  {
   color: #757575;
 }
+
+@media screen and (max-width: 768px) {
+  .menu-icons-spacing {
+    padding: -5px;
+  }
+}
+
+/*@media (min-width: @screen-sm-min) {
+  body {
+      background-color: red;
+  }
+}*/
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
