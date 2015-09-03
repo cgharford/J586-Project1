@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
   <body>
+    <!--Header at top of page-->
     <div class="row container-fluid" id="header">
       <span>
         <a href="#" id="top-bar-link">MINI of Raleigh</a> &nbsp;
@@ -21,8 +22,10 @@
       <span class="separator"> &#x7c;</span>&nbsp;
       <a href="#"><img src="img/header-settings-icon.png"></a>
     </div>
+
+    <!--Main menu near top of page-->
     <div class="row container-fluid" id="menu">
-      <a href="#" class="menu-icons"><div class="nav-icon-1 center-nav"></div></a>
+      <a href="#" class="menu-icons" id="active-icon"><div class="nav-icon-1 center-nav"><img src="img/active-page-marker.png" id="active"></div></a>
       <a href="#" class="menu-icons"><div class="nav-icon-2 center-nav"></div></a>
       <a href="#" class="menu-icons"><div class="nav-icon-3 center-nav"></div></a>
       <a href="#" class="menu-icons"><div class="nav-icon-4 center-nav"></div></a>
@@ -30,6 +33,7 @@
       <a href="#" class="menu-icons"><div class="nav-icon-6 center-nav"></div></a>
     </div>
 
+    <!--Dashboard with search bar-->
     <div class="container col-lg-10 col-lg-offset-1 content">
         <div class="row col-lg-12" id="dashboard">
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12" id="dashboard-label">Dashboard</div>
@@ -40,6 +44,8 @@
             <input id="search-box" type="text">
           </div>
         </div>
+
+        <!--Main content for page-->
         <div class="row col-lg-12" id="main-content">
           <div class="row" id="content-container">
             <div class="col-lg-2 container-fluid" id="announcements">
@@ -53,6 +59,7 @@
               <a href="#"><img src="img/next-page.png"></a>
             </div>
 
+            <!--Lists of Tasks and Recommendations-->
             <div class="border2 headings col-lg-4 col-md-6 container-fluid">
                 Tasks
                 <a href="#"><i id="tasks-icon" class="fa fa-cog"></i></a>
@@ -115,6 +122,7 @@
                 </div>
             </div>
 
+            <!--Analytics section with bar graph, pie charts, dropbox, and checkboxes-->
             <div class="border col-lg-8 col-md-6 col-sm-12 col-xs-12 container-fluid" id="analytics">
               Analytics
               <div class="row" id="activity">
@@ -136,6 +144,7 @@
                     <img src="img/graph.png" id="graph">
                 </div>
                 </div>
+                <!--Channels and referrals pie charts-->
                 <div class="col-lg-3 activity-wrapper" id="pie-charts">
                   <div class="col-lg-12 col-md-6 col-sm-6 col-xs-6">
                     CHANNELS
@@ -151,6 +160,7 @@
                   </div>
                 </div>
               </div>
+              <!--Social media checkboxes-->
               <div class="col-lg-12" id="checkboxes">
                 <input type="checkbox" name="vehicle" value="">
                 <span class="social-media-label" id="facebook">
@@ -173,7 +183,7 @@
 
             <!--Contains the contact and customer profiles and graphs-->
             <div class="border col-lg-8 container-fluid" id="contact-graphs">
-              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" id="contact-graphs-border">
                 <div class="profile-boxes">
                   <div>
                     <img src="img/contacts-piece1.png">
@@ -208,7 +218,7 @@
             </div>
 
             <!--Contains the Did you know? section-->
-            <div class="border col-lg-8 container-fluid">
+            <div class="border col-lg-8 container-fluid" id="did-you-know-border">
                 <div class="col-lg-12" id="did-you-know-box">
                   <a href="#"><span id="arrow-left"><img src="img/arrow-left.png"></span></a>
                   <a href="#"><span id="arrow-right"><img src="img/arrow-right.png"></span></a>
