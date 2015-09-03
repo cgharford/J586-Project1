@@ -93,7 +93,7 @@ input[type=checkbox]:checked {
 
 #active-icon {
   position: relative;
-  top; 0;
+  top: 0;
   left: 0;
 }
 
@@ -459,9 +459,9 @@ input[type=checkbox]:checked {
 }
 
 /* Did you know? box with navigational arrows */
-#did-you-know-border {
+/*#did-you-know-border {
   border-top: none;
-}
+}*/
 
 #did-you-know-box {
   background-image:
