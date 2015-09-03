@@ -1,24 +1,3 @@
-
-
-/*@media all and (min-width: 1140px) {
-  body {
-      background-color: lightblue;
-  }
-}
-
-@media all and (max-width: 1139px) and (min-width: 800px) {
-  body {
-      background-color: lightblue;
-  }
-}
-
-@media all and (max-width: 799px) {
-  body {
-      background-color: lightblue;
-  }
-}*/
-
-
 a {
   color: #1996E8;
   text-decoration: none;
@@ -75,7 +54,7 @@ input[type=checkbox]:checked {
    border-radius: .15em;
    background-color: white;
    background-image: url("../img/checkmark.png");
-   background-size: 125% 125%;
+   background-size: 109% 104%;
    background-repeat: no-repeat;
    background-position: left;
    overflow: visible;
@@ -110,17 +89,91 @@ input[type=checkbox]:checked {
   text-align: center;
 }
 
-.positioning {
-  position: relative;
-  top: 0;
-  left: 0;
+.nav-icon-1:hover {
+  background-image: url('../img/icon-dashboard.png');
+  width: 60px;
+  height: 75px;
+  background-repeat: no-repeat;
+}
+
+.nav-icon-1 {
+  background-image: url('../img/dashboard-icon-active2.png');
+  width: 60px;
+  height: 75px;
+  background-repeat: no-repeat;
+}
+
+.nav-icon-2:hover {
+  background-image: url('../img/icon-customers.png');
+  width: 60px;
+  height: 66px;
+  background-repeat: no-repeat;
+}
+
+.nav-icon-2 {
+  background-image: url('../img/customers-icon-active2.png');
+  width: 60px;
+  height: 66px;
+  background-repeat: no-repeat;
+}
+
+.nav-icon-3:hover {
+  background-image: url('../img/icon-messages.png');
+  width: 60px;
+  height: 67px;
+  background-repeat: no-repeat;
+}
+.nav-icon-3 {
+  background-image: url('../img/messages-icon-active2.png');
+  width: 60px;
+  height: 67px;
+  background-repeat: no-repeat;
+}
+
+.nav-icon-4:hover {
+  background-image: url('../img/icon-promotions.png');
+  width: 60px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+.nav-icon-4 {
+  background-image: url('../img/promotions-icon-active2.png');
+  width: 60px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+
+.nav-icon-5:hover {
+  background-image: url('../img/icon-page-creator.png');
+  width: 60px;
+  height: 71px;
+  background-repeat: no-repeat;
+}
+.nav-icon-5 {
+  background-image: url('../img/page-creator-icon-active2.png');
+  width: 60px;
+  height: 71px;
+  background-repeat: no-repeat;
+}
+
+.nav-icon-6:hover {
+  background-image: url('../img/icon-analytics.png');
+  width: 60px;
+  height: 67px;
+  background-repeat: no-repeat;
+}
+.nav-icon-6 {
+  background-image: url('../img/analytics-icon-active2.png');
+  width: 60px;
+  height: 67px;
+  background-repeat: no-repeat;
+}
+
+.center-nav {
+  display: inline-block;
 }
 
 .menu-icons {
-  vertical-align: bottom;
-}
-
-.menu-icons-spacing {
   padding: 1em;
 }
 
@@ -198,6 +251,12 @@ input[type=checkbox]:checked {
 
 .border2 {
   border-top: 1px solid #DDDDDD;
+  padding: 1em 1em 1em 1em;
+}
+
+.border3 {
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
   padding: 1em 1em 1em 1em;
 }
 
@@ -355,7 +414,7 @@ input[type=checkbox]:checked {
 
 
 #contact-graphs {
-  text-align: center;
+  text-align: -webkit-center;
 }
 
 .profile-boxes {
@@ -469,6 +528,10 @@ input[type=checkbox]:checked {
   color: #757575;
 }
 
+#navigate-up-arrow {
+  float: right;
+}
+
 .footer-social {
   text-align: center;
   border-right: 1px solid #DDDDDD;
@@ -498,17 +561,40 @@ a.grey-links  {
   color: #757575;
 }
 
-@media screen and (max-width: 768px) {
-  .menu-icons-spacing {
-    padding: -5px;
+@media screen and (max-width: 575px) {
+  #header {
+    text-align: center;
+    padding: 1em;
+  }
+  #menu {
+      padding: 1em 0em 1em 0em;
+      margin-left: -10px;
+      margin-right: -15px;
+  }
+  .menu-icons {
+    padding: .15em;
   }
 }
 
-/*@media (min-width: @screen-sm-min) {
-  body {
-      background-color: red;
+@media screen and (max-width: 1200px) {
+  .border3 {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+    border-left: none;
+    border-right: none;
+    padding: 1em 1em 1em 1em;
   }
-}*/
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) { ... }
+  #footer-menu, #footer-info, #footer-logout {
+    text-align: center;
+    border-bottom: 1px solid #DDDDDD;
+  }
+  .footer-social {
+    border-right: none;
+  }
+
+  #navigate-up-arrow {
+    float: none;
+    padding: 1em;
+  }
+}
